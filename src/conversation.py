@@ -1,13 +1,14 @@
 import openai
 import os
 from utils import wrapped_api,print_response
-openai.api_key = "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"
+from CONSTANTS import api_key
+openai.api_key = api_key
 
 
 def main():
     while True:
         question=input("You:")
-        if question == "stop":
+        if question in ["stop","exit"]:
             print("conversation closed")
             break
         response,text=wrapped_api(question)

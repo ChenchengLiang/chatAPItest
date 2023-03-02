@@ -1,6 +1,7 @@
 import openai
 from utils import wrapped_api,print_response
-openai.api_key = "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"
+from CONSTANTS import api_key
+openai.api_key = api_key
 
 
 def main():

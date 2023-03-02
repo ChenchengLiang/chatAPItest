@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+CONSTANTS.py
 *.iml
 *.xml
 # C extensions
